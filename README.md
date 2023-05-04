@@ -82,11 +82,11 @@ Project Link: [https://github.com/JojorioCh/L5-Mission0.git](https://github.com/
 
 ## Acknowledgments
 
-- [Mantine](https://mantine.dev/) Helped me a lot in creating this website.
+- This was just a simple HTML design but I would really like to shout out the following:
 
 - [Chatimize](https://www.youtube.com/@chatimize) A YouTube content creator who had videos giving tips and tricks for Dialogflow
 
-- I Would also like to Thank Ram the UX Designer who helped with giving feedback for this project.
+- [Ram Manthry](https://www.linkedin.com/in/ram-manthry-2a427715/), who patiently went through the SCSS and sassy-styling so that I could apply it to my coding here.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
