@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="https://github.com/JojorioCh/L5-Mission1">
-    <img src="images/turners.png" alt="Logo" width="400" height="100">
+    <img src="images/turners.png" alt="Logo" width="100" height="100">
   </a>
 <h3 align="center">Dialogflow ChatBot attempt</h3>
 </div>
@@ -25,7 +25,7 @@
 
 ## About the Project
 
-<img src="images/PageLayout.png" alt="img"><img src="images/ChatBot.png" alt="img2">
+<img src="images/PageLayout.png" alt="img" width="200" height="100"><img src="images/ChatBot.png" alt="img2" width="50" height="100">
 
 This Website and Chatbot were created as part of a class Mission Project with a focus of being able to create a chatbot using the assistance of Dialogflow.
 
