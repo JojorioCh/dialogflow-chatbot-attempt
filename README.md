@@ -6,7 +6,8 @@
     <img src="images/Ry.png" alt="Logo" width="150" height="300">
     <img src="images/Dialogflow.png" alt="Logo" width="100" height="100">
   </a>
-<h3 align="center">Dialogflow ChatBot attempt</h3>
+<h3 align="center">Dialogflow ChatBot Attempt</h3>
+<p>Misson 1 task 4&5 to build and implement a chat bot</p>
 </div>
 <details>
 <summary>T.O.C</summary>
