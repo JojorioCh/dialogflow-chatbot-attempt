@@ -1,0 +1,120 @@
+@use "colors" as c;
+@use "media-queries" as m;
+
+.auctionstuffs {
+  background-image: url("../images/InitialD.jpg");
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.6);
+  background-blend-mode: lighten;
+  color: black;
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    height: 90vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+    // padding-right: 24px;
+    // padding-left: 24px;
+    @include m.tablet {
+      grid-template-columns: 1fr;
+      height: 100%;
+    }
+
+    &--left {
+      width: 100%;
+      line-height: 1.2;
+      @include m.tablet {
+        padding: 5rem 0;
+      }
+      @include m.mobile {
+        line-height: 1.5;
+      }
+
+      h1 {
+        font-size: 4rem;
+        color: c.$standout-color;
+        margin: 0;
+        -webkit-text-stroke: 0.0625rem black;
+        @include m.mobile {
+          font-size: 1.5rem;
+          -webkit-text-stroke: 0.0625rem black;
+        }
+      }
+
+      h2 {
+        font-size: 3rem;
+        color: c.$secondary-color;
+        margin: 0;
+        -webkit-text-stroke: 0.0625rem black;
+        @include m.mobile {
+          font-size: 2rem;
+          -webkit-text-stroke: 0.0625rem black;
+        }
+      }
+
+      p {
+        font-size: 1.5rem;
+        color: c.$secondary-color;
+        margin-top: 2rem;
+        font-weight: 700;
+        @include m.mobile {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    &--right {
+      text-align: center;
+      padding-left: 2rem;
+    }
+  }
+  &__img {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+  &--button {
+    font-size: 1rem;
+    background-color: c.$standout-color;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: c.$primary-color;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s;
+    outline: none;
+
+    a {
+      position: relative;
+      z-index: 2;
+      color: c.$primary-color;
+      text-decoration: none;
+    }
+
+    &:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: c.$button-hover-color;
+      transition: all 0.3s;
+      border-radius: 4px;
+    }
+
+    &:hover:after {
+      width: 100%;
+    }
+  }
+}

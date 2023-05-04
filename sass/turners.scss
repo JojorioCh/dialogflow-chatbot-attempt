@@ -1,0 +1,9 @@
+@use "colors" as c;
+@use "navbar";
+@use "auctionstuffs";
+
+.main {
+  margin: 0;
+  @include c.theme-colors($light-theme: false);
+  font-family: "Nunito", sans-serif;
+}

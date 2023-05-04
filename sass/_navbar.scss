@@ -1,0 +1,77 @@
+@use "colors" as c;
+@use "media-queries" as m;
+@use "utils" as u;
+
+%flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  z-index: 10;
+  position: relative;
+  background-color: c.$primary-color;
+
+  &__logo {
+    color: c.$secondary-color;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-left: 24px;
+    @extend %flex-center;
+  }
+
+  &__bars {
+    opacity: 0;
+    @include m.tablet {
+      color: c.$secondary-color;
+      opacity: 1;
+      position: absolute;
+      top: 22px;
+      right: 20px;
+      font-size: 2rem;
+    }
+  }
+
+  &__menu {
+    list-style: none;
+    text-align: center;
+    margin-right: 24px;
+    @extend %flex-center;
+    @include m.tablet {
+      display: none;
+    }
+
+    &--link {
+      color: c.$secondary-color;
+      justify-content: center;
+      text-decoration: none;
+      padding: 0 1rem;
+      @extend %flex-center;
+
+      &:hover {
+        color: c.$standout-color;
+        transition: all 0.3s ease;
+      }
+    }
+
+    &--button {
+      padding: u.toRem(12) u.toRem(24);
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      background: c.$standout-color;
+      margin-left: u.toRem(16);
+      color: c.$secondary-color;
+
+      &:hover {
+        background: c.$button-hover-color;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}

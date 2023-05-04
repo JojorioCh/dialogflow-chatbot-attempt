@@ -1,0 +1,195 @@
+.navbar__menu--link, .navbar__menu, .navbar__logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  z-index: 10;
+  position: relative;
+  background-color: #228be6;
+}
+.navbar__logo {
+  color: #f8f9fa;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-left: 24px;
+}
+.navbar__bars {
+  opacity: 0;
+}
+@media (max-width: 768px) {
+  .navbar__bars {
+    color: #f8f9fa;
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    font-size: 2rem;
+  }
+}
+.navbar__menu {
+  list-style: none;
+  text-align: center;
+  margin-right: 24px;
+}
+@media (max-width: 768px) {
+  .navbar__menu {
+    display: none;
+  }
+}
+.navbar__menu--link {
+  color: #f8f9fa;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+.navbar__menu--link:hover {
+  color: #c92a2a;
+  transition: all 0.3s ease;
+}
+.navbar__menu--button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #c92a2a;
+  margin-left: 1rem;
+  color: #f8f9fa;
+}
+.navbar__menu--button:hover {
+  background: #fa5252;
+  transition: all 0.3s ease;
+}
+
+.auctionstuffs {
+  background-image: url("../images/InitialD.jpg");
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.6);
+  background-blend-mode: lighten;
+  color: black;
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.auctionstuffs__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  height: 90vh;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+}
+@media (max-width: 768px) {
+  .auctionstuffs__container {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+}
+.auctionstuffs__container--left {
+  width: 100%;
+  line-height: 1.2;
+}
+@media (max-width: 768px) {
+  .auctionstuffs__container--left {
+    padding: 5rem 0;
+  }
+}
+@media (max-width: 280px) {
+  .auctionstuffs__container--left {
+    line-height: 1.5;
+  }
+}
+.auctionstuffs__container--left h1 {
+  font-size: 4rem;
+  color: #c92a2a;
+  margin: 0;
+  -webkit-text-stroke: 0.0625rem black;
+}
+@media (max-width: 280px) {
+  .auctionstuffs__container--left h1 {
+    font-size: 1.5rem;
+    -webkit-text-stroke: 0.0625rem black;
+  }
+}
+.auctionstuffs__container--left h2 {
+  font-size: 3rem;
+  color: #f8f9fa;
+  margin: 0;
+  -webkit-text-stroke: 0.0625rem black;
+}
+@media (max-width: 280px) {
+  .auctionstuffs__container--left h2 {
+    font-size: 2rem;
+    -webkit-text-stroke: 0.0625rem black;
+  }
+}
+.auctionstuffs__container--left p {
+  font-size: 1.5rem;
+  color: #f8f9fa;
+  margin-top: 2rem;
+  font-weight: 700;
+}
+@media (max-width: 280px) {
+  .auctionstuffs__container--left p {
+    font-size: 1.5rem;
+  }
+}
+.auctionstuffs__container--right {
+  text-align: center;
+  padding-left: 2rem;
+}
+.auctionstuffs__img {
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+.auctionstuffs--button {
+  font-size: 1rem;
+  background-color: #c92a2a;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 4px;
+  color: #228be6;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+  outline: none;
+}
+.auctionstuffs--button a {
+  position: relative;
+  z-index: 2;
+  color: #228be6;
+  text-decoration: none;
+}
+.auctionstuffs--button:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #fa5252;
+  transition: all 0.3s;
+  border-radius: 4px;
+}
+.auctionstuffs--button:hover:after {
+  width: 100%;
+}
+
+.main {
+  margin: 0;
+  background: #343541;
+  font-family: "Nunito", sans-serif;
+}
+
+/*# sourceMappingURL=turners.css.map */

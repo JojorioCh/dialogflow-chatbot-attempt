@@ -1,0 +1,12 @@
+$primary-color: #228be6;
+$secondary-color: #f8f9fa;
+$standout-color: #c92a2a;
+$button-hover-color: #fa5252;
+
+@mixin theme-colors($light-theme: true) {
+    @if $light-theme { 
+      background: $primary-color;
+    } @else {
+      background: #343541;
+    }
+  }
