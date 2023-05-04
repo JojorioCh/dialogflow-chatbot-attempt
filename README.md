@@ -27,7 +27,7 @@
 
 ## About the Project
 
-<img src="images/PageLayout.png" alt="img" width="400" height="200">&nbsp;&nbsp;&nbsp;<img src="images/ChatBot.png" alt="img2" width="200" height="400">
+<img src="images/PageLayout.png" alt="img" width="600" height="400">&nbsp;&nbsp;&nbsp;<img src="images/ChatBot.png" alt="img2" width="200" height="400">
 
 This Website and Chatbot were created as part of a class Mission Project with a focus of being able to create a chatbot using the assistance of Dialogflow.
 
